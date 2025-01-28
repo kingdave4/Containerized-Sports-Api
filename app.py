@@ -15,15 +15,18 @@ def get_nfl_schedule():
         # Query SerpAPI
         params = {
             "engine": "google",
-            "q": "nfl schedule",
+            "q": "nfl schedule 2025",
+            "gl": "us",
             "api_key": SERP_API_KEY
         }
         response = requests.get(SERP_API_URL, params=params)
         response.raise_for_status()
         data = response.json()
 
+    
         # Extract games from sports_results
         games = data.get("sports_results", {}).get("games", [])
+
         if not games:
             return jsonify({"message": "No NFL schedule available.", "games": []}), 200
 
@@ -53,3 +56,4 @@ def get_nfl_schedule():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
+
