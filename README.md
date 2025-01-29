@@ -58,7 +58,6 @@ docker tag sports-api:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sp
 docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 ```
 
-
 ### 4️⃣ Deploy Infrastructure Using Terraform
 ```bash
 cd terraform
@@ -98,16 +97,14 @@ sports-api-management/
 ✅ **Security Groups**: Enforces secure network communication.
 
 ## 🎯 What I Learned
-⭐ **Automated AWS infrastructure provisioning** using Terraform.
-⭐ **Containerized application deployment** on ECS (Fargate).
-⭐ **API Gateway integration** for secure API access.
-⭐ **CloudWatch monitoring** to track API activity and errors.
+⭐ Automated AWS Infrastructure Provisioning – Enhanced my troubleshooting skills while deploying Terraform code. Successfully provisioned ECS, Load Balancer, and API Gateway using Infrastructure as Code for the first time.
 
-## Clean up time
-To be able to delete all the resouces that was created by Terraform use the following command.
-```bash
-terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
-```
+⭐ Containerized Application Deployment – Learned how to deploy and manage containerized applications with Amazon ECS (Fargate).
+
+⭐ API Gateway Integration – Gained experience in setting up API Gateway to control traffic flow and securely expose endpoints.
+
+⭐ Docker Image Management with ECR – Learned how to tag and push local Docker images to Amazon Elastic Container Registry (ECR) for seamless deployment.
+
 
 ## 🚀 Future Enhancements
 🔹 **Add Caching**: Use Amazon ElastiCache for frequent requests.
@@ -122,3 +119,9 @@ Got ideas? Feel free to **open an issue** or **submit a pull request**!
 ### 📢 **Author**
 - GitHub: [kingdave4](https://github.com/kingdave4)
 
+## 🧹 Clean-Up Instructions
+To remove all AWS resources provisioned by Terraform, run the following command:
+```bash
+terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
+```
+This will delete the ECS cluster, API Gateway, Load balancer, and other associated resources, ensuring a clean teardown of the infrastructure. 🚀
