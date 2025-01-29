@@ -36,7 +36,7 @@ During my initial attempt at building the system, I manually configured everythi
 ## 🏗️ How It Works
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/ifeanyiro9/containerized-sports-api.git
+git clone https://github.com/kingdave4/Containerized-Sports-Api.git
 cd containerized-sports-api
 ```
 
@@ -59,16 +59,16 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-a
 ```bash
 cd terraform
 terraform init
-tarraform plan
+terraform plan -var="sports_api_key=<Enter your SerpAPI key>" 
 terraform apply -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ```
 
 ### 5️⃣ Retrieve API Gateway Endpoint
 Once deployment is complete, Terraform will output the **API Gateway URL**. Use this to test the API:
-```bash
 
-curl https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
-```
+![image](https://github.com/user-attachments/assets/233febc6-dbd6-46eb-ab3a-44232417b65b)
+
+
 
 ## 📂 Project Structure
 ```
@@ -93,12 +93,17 @@ sports-api-management/
 ✅ **IAM Roles**: Implements least-privilege access control.
 ✅ **Security Groups**: Enforces secure network communication.
 
-
 ## 🎯 What I Learned
 ⭐ **Automated AWS infrastructure provisioning** using Terraform.
 ⭐ **Containerized application deployment** on ECS (Fargate).
 ⭐ **API Gateway integration** for secure API access.
 ⭐ **CloudWatch monitoring** to track API activity and errors.
+
+## Clean up time
+To be able to delete all the resouces that was created by Terraform use the following command.
+```bash
+terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
+```
 
 ## 🚀 Future Enhancements
 🔹 **Add Caching**: Use Amazon ElastiCache for frequent requests.
