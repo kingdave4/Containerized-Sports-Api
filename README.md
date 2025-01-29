@@ -33,7 +33,7 @@ During my initial attempt at building the system, I manually configured everythi
 - **Docker Installed**: Required for building and running containers.
 
 
-## 🏗️ Architecture Overview
+## 🏗️How it works
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/df58daa1-9177-43b1-bdbd-315be9886d59)
 
 ##🚀Deployment Guide
