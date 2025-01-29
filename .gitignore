@@ -188,3 +188,7 @@ override.tf.json
 
 # Sensitive configuration files (e.g., environment variables)
 .env
+
+.dockerignore
+
+.gitignore
