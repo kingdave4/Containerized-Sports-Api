@@ -81,13 +81,21 @@ sports-api-management/
 
 ## ⚙️ AWS Services Breakdown
 ✅ **ECR Reposiory**: Stores the docker image in the cloud.
+
 ✅ **ECS Cluster**: Runs the containerized Flask application.
+
 ✅ **ECS Task Definition**: Defines CPU, memory, and environment settings.
+
 ✅ **ECS Service**: Ensures the Flask API runs consistently.
+
 ✅ **Application Load Balancer**: Routes traffic securely.
+
 ✅ **API Gateway**: Exposes the API to external consumers.
+
 ✅ **CloudWatch Logs**: Captures API logs for debugging and monitoring.
+
 ✅ **IAM Roles**: Implements least-privilege access control.
+
 ✅ **Security Groups**: Enforces secure network communication.
 
 
