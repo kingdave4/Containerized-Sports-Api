@@ -3,8 +3,6 @@
 
 ## 🚀 Project Overview
 
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/df58daa1-9177-43b1-bdbd-315be9886d59)
-
 Welcome to DevOpsChallenge #4! This project creates a containerized API management system for querying real-time sports data. It utilizes Amazon ECS (Fargate) for container orchestration, Amazon API Gateway to expose RESTful endpoints, and integrates with an external Sports API. The goal is to develop a scalable, serverless, and secure solution for managing sports data.
 
 During my initial attempt at building the system, I manually configured everything through the AWS console, and it worked as expected. However, to challenge myself and enhance efficiency, flexibility, and speed, I automated the entire process using Terraform (Infrastructure as Code, IAC). This project posed a few challenges, especially during deployment, but I gained valuable insights and hands-on experience from it.
@@ -35,7 +33,11 @@ During my initial attempt at building the system, I manually configured everythi
 - **Docker Installed**: Required for building and running containers.
 
 
-## 🏗️ How It Works
+## 🏗️ Architecture Overview
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/df58daa1-9177-43b1-bdbd-315be9886d59)
+
+##🚀 Deployment Guide
+
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/kingdave4/Containerized-Sports-Api.git
