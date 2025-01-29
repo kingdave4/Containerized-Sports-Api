@@ -99,7 +99,8 @@ sports-api-management/
 ⭐ **API Gateway integration** for secure API access.
 ⭐ **CloudWatch monitoring** to track API activity and errors.
 
-## Clean up time.
+## Clean up time
+To be able to delete all the resouces that was created by Terraform use the following command.
 ```bash
 terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ```
