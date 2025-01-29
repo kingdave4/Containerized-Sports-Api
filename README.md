@@ -34,7 +34,8 @@ During my initial attempt at building the system, I manually configured everythi
 
 
 ## 🏗️How it works
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/df58daa1-9177-43b1-bdbd-315be9886d59)
+![407614929-233febc6-dbd6-46eb-ab3a-44232417b65b](https://github.com/user-attachments/assets/0651ede1-ee29-4d41-93a7-a8f9e80d2b61)
+
 
 ## 🚀Deployment Guide
 
