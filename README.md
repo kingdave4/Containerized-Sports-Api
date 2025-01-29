@@ -34,7 +34,7 @@ During my initial attempt at building the system, I manually configured everythi
 
 
 ## 🏗️How it works
-![407614929-233febc6-dbd6-46eb-ab3a-44232417b65b](https://github.com/user-attachments/assets/0651ede1-ee29-4d41-93a7-a8f9e80d2b61)
+
 
 
 ## 🚀Deployment Guide
@@ -70,8 +70,7 @@ terraform apply -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ### 5️⃣ Retrieve API Gateway Endpoint
 Once deployment is complete, Terraform will output the **API Gateway URL**. Use this to test the API:
 
-![image](https://github.com/user-attachments/assets/233febc6-dbd6-46eb-ab3a-44232417b65b)
-
+![407614929-233febc6-dbd6-46eb-ab3a-44232417b65b](https://github.com/user-attachments/assets/0651ede1-ee29-4d41-93a7-a8f9e80d2b61)
 
 
 ## 📂 Project Structure
