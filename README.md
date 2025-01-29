@@ -59,7 +59,7 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-a
 ```bash
 cd terraform
 terraform init
-terraform plan
+terraform plan -var="sports_api_key=<Enter your SerpAPI key>" 
 terraform apply -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ```
 
