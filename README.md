@@ -36,7 +36,7 @@ During my initial attempt at building the system, I manually configured everythi
 ## 🏗️ How It Works
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/ifeanyiro9/containerized-sports-api.git
+git clone https://github.com/kingdave4/Containerized-Sports-Api.git
 cd containerized-sports-api
 ```
 
