@@ -65,9 +65,9 @@ terraform apply -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 
 ### 5️⃣ Retrieve API Gateway Endpoint
 Once deployment is complete, Terraform will output the **API Gateway URL**. Use this to test the API:
-```bash
+```
+![image](https://github.com/user-attachments/assets/233febc6-dbd6-46eb-ab3a-44232417b65b)
 
-curl https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 ```
 
 ## 📂 Project Structure
