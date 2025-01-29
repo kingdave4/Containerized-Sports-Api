@@ -43,14 +43,16 @@ cd containerized-sports-api
 ### 1️⃣ Create ECR Repo
 ```bash
 aws ecr create-repository --repository-name sports-api --region us-east-1
-
+```
 
 ### 3️⃣ Authenticate, Build, and Push the Docker Image
+```bash
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
 
 docker build --platform linux/amd64 -t sports-api .
 docker tag sports-api:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+```
 
 
 ### 4️⃣ Deploy Infrastructure Using Terraform
@@ -64,6 +66,7 @@ terraform apply -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ### 5️⃣ Retrieve API Gateway Endpoint
 Once deployment is complete, Terraform will output the **API Gateway URL**. Use this to test the API:
 ```bash
+
 curl https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 ```
 
