@@ -93,12 +93,16 @@ sports-api-management/
 ✅ **IAM Roles**: Implements least-privilege access control.
 ✅ **Security Groups**: Enforces secure network communication.
 
-
 ## 🎯 What I Learned
 ⭐ **Automated AWS infrastructure provisioning** using Terraform.
 ⭐ **Containerized application deployment** on ECS (Fargate).
 ⭐ **API Gateway integration** for secure API access.
 ⭐ **CloudWatch monitoring** to track API activity and errors.
+
+## Clean up time.
+```bash
+terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
+```
 
 ## 🚀 Future Enhancements
 🔹 **Add Caching**: Use Amazon ElastiCache for frequent requests.
